@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Browse Used Clothes</title>
+</head>
+<body>
+<h1>Browse Used Clothes</h1>
+
+<ul>
+{% for item in clothes %}
+<li>
+<a href="{{ url_for('item_detail', id=item.id) }}">{{ item.name }}</a>
+({{ item.size }}, {{ item.color }}, ${{ item.price }})
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
