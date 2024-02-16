@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Cart</title>
+</head>
+<body>
+<h1>Shopping Cart</h1>
+
+<ul>
+{% for item in cart %}
+<li>
+{{ item.name }}
+({{ item.size }}, {{ item.color }}, ${{ item.price }})
+</li>
+{% endfor %}
+</ul>
+
+<a href="{{ url_for('checkout') }}">Checkout</a>
+</body>
+</html>
+
+
