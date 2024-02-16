@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Used Clothes</title>
+</head>
+<body>
+<h1>Search Used Clothes</h1>
+
+<form action="{{ url_for('search') }}" method="post">
+<label for="size">Size:</label>
+<select name="size">
+<option value="All">All</option>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+</select>
+
+<label for="color">Color:</label>
+<select name="color">
+<option value="All">All</option>
+<option value="Red">Red</option>
+<option value="Blue">Blue</option>
+<option value="Black">Black</option>
+</select>
+
+<label for="type">Type:</label>
+<select name="type">
+<option value="All">All</option>
+<option value="T-shirt">T-shirt</option>
+<option value="Jeans">Jeans</option>
+<option value="Dress">Dress</option>
+</select>
+
+<input type="submit" value="Search">
+</form>
+</body>
+</html>
+
+
